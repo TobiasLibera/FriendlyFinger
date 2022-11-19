@@ -12,7 +12,7 @@ Stress relief device.
   I don't own any degrees in electronics!
   So I won't make any further advises on how to design the curcuit itself.
   All I do is giving an example without any warranty for safety and functionality.
-</stront>
+</strong>
 
   There is a curcuit layout in the "Documentation" directory, where the basics of the curcuit are shown in the way I planned them for my own work. It's missing headers for the RGB-LEDs as it's missing headers for the Step-Down voltage regulator.
   
