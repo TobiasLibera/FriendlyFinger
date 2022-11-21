@@ -18,9 +18,9 @@ For me, I can say, that I had a lot of fun developing and building the FriendlyF
 ### Before you start the Printing ###
 
 <p><strong>
-  There is a ```FF_Template_Fits``` part, which has all fits in it, that are needed for the assembly.
+  There is a "FF_Template_Fits" part, which has all fits in it, that are needed for the assembly.
   The dimensions of the holes are the ones, that I use to get good fits.
-  I strongly recomment to print this part at least once to check if all fits are working properly.
+  I strongly recommend to print this part at least once to check if all fits are working properly.
 </strong><br>
 </p>
 
@@ -47,6 +47,8 @@ The fits in the ```FF_Template_Fits``` part are:
   </li>    
   <li>Countersunk hole for M3 screw of standard ISO4762</li>
 </ol>
+
+Feel free to modify the corresponding STEP files to make this fits work properly.
 
 
 ### Cura Settings ###
