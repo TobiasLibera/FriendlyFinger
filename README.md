@@ -142,7 +142,7 @@ But it's possible, so I think you will get this done.
 You need to glue the ```FF_Axis``` part to the ```FF_MiddleFinger``` part. I used fast drying epoxy glue which did the job quite well.<br></br>
 
 
-## Mentions ##
+## Credits ##
 
 ### Middle Finger ###
 
