@@ -168,7 +168,7 @@ Therefor I want to ask you to donate a little tip for one of the following organ
 I do not gain anything from it, and the organizations don't even know, I am sharing their links.
 <br></br>
 [Irrsinnig Menschlich e.V.](https://www.betterplace.org/de/organisations/2508-irrsinnig-menschlich-e-v)\
-Translated Name: *Insanely Human* (registered association)
+Translated Name: *Insanely Humane* (registered association)
 <br></br>
 [Stiftung Deutsche Depressionshilfe](https://www.betterplace.org/de/organisations/24384-stiftung-deutsche-depressionshilfe)\
 Translated Name: *German Depression Help* (foundation)
