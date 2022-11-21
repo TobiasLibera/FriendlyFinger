@@ -130,8 +130,16 @@ The other settings can be set as it's pleasing to you. Feel free to mess around 
 
 ## Assembling the FriendlyFinger ##
 
-*"It's a little bit tricky here and there"*<br></br>
+*"It's a little bit tricky here and there..."*
 
+### LEDs to Body ###
+
+I won't lie to you. It's really pain in the a** to fit them in. I used WD40 as lube and still had problems to to this. Also you need to lead the cables down to the curcuit board while the stepper motor and the middle finger are already in the assembly.\
+But it's possible, so I think you will get this done.
+
+### Axis to Middle Finger ###
+
+You need to glue the ```FF_Axis``` part to the ```FF_MiddleFinger``` part. I used fast drying epoxy glue which did the job quite well.<br></br>
 
 
 ## Mentions ##
@@ -139,7 +147,7 @@ The other settings can be set as it's pleasing to you. Feel free to mess around 
 ### Middle Finger ###
 
 The original 3D model for the middle finger itself was desgined by ```Dmitrij Drandarov``` alias ```DahakaMVI```.
-The file can be found on [Thingiverse](https://www.thingiverse.com/thing:4923022)
+The file can be found on [Thingiverse](https://www.thingiverse.com/thing:4923022).
 
 ### GrabCAD ###
 
@@ -149,7 +157,7 @@ I can absolutely recommend this website for 3D Models for standard parts, especi
 ### ESP32 Webserver ###
 
 As I didn't had much experience with webservers hosted on an ESP32, I used a tutorial as a base for my version of the code.
-The tutorial I used is [ESP32 Webserver Tutorial](https://lastminuteengineers.com/creating-esp32-web-server-arduino-ide/)<br></br>
+The tutorial I used is [ESP32 Webserver Tutorial](https://lastminuteengineers.com/creating-esp32-web-server-arduino-ide/).<br></br>
 
 
 
@@ -159,8 +167,10 @@ I want to dedicate this work to organizations which commit themselfs to helping 
 Therefor I want to ask you to donate a little tip for one of the following organizations on www.betterplace.org, as long as you feel comfortable with that.\
 I do not gain anything from it, and the organizations don't even know, I am sharing their links.
 <br></br>
-LINK
+[Irrsinnig Menschlich e.V.](https://www.betterplace.org/de/organisations/2508-irrsinnig-menschlich-e-v)\
+Translated Name: *Insanely Human* (registered association)
 <br></br>
-LINK
+[Stiftung Deutsche Depressionshilfe](https://www.betterplace.org/de/organisations/24384-stiftung-deutsche-depressionshilfe)\
+Translated Name: *German Depression Help* (foundation)
 <br></br>
 ***Thank you very much!***
