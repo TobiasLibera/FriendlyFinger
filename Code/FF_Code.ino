@@ -8,8 +8,9 @@
  * All data of this project is licensed under the
  * Creative Commons Zero v1.0 Universal
  * 
- * 2022-11-20
+ * 2022-11-25
  */
+ 
 #include <WiFi.h>
 #include <Arduino.h>
 
@@ -23,6 +24,7 @@
 
 #define STEPPER_STP         23
 #define STEPPER_DIR         22
+#define STEPPER_EN          32
 
 #define RGB_L_RED           21
 #define RGB_L_GRN           19
@@ -74,9 +76,9 @@ IPAddress DNS               (192, 168, 1,   1) ;
  * Movement Definitions
  */
 
-#define MOVEMENT_ANGLE                170       /* Movement angle from complete to the left to complete to the right */
-#define MOVEMENT_SPEED                5         /* Duration in seconds for one movement from left to right */
-#define STEPS_PER_ROTATION            1600      /* Number of steps for one rotation of the stepper motor (Microstepping) */
+#define MOVEMENT_ANGLE                130       /* Movement angle from complete to the left to complete to the right */
+#define MOVEMENT_SPEED                8         /* Duration in seconds for one movement from left to right */
+#define STEPS_PER_ROTATION            6400      /* Number of steps for one rotation of the stepper motor (Microstepping) */
 #define TIME_AT_DIRECTION_REVERSE     300       /* Number of milliseconds to wait at movment extreme point before direction is reversed */
 
 
@@ -375,24 +377,27 @@ class Stepper
 
   public:
 
-    Stepper (uint8_t stp_pin, uint8_t dir_pin)
+    Stepper (uint8_t stp_pin, uint8_t dir_pin, uint8_t en_pin)
     {
       /*
        * Constructor for Class for Stepper Motor
-       * Defines Step Pin and Direction Pin of the DRV8825 Stepper Motor Driver
+       * Defines Step Pin, Direction Pin and Enable Pin of the DRV8825 Stepper Motor Driver
        * Defines this pins as output and makes sure, the voltage level of the pins
-       * are indeed set to 0V
+       * are indeed set to 0V or 1V (Enable)
        * Calculates Parameters needed for the movement from global definitions
        * Sets current position to center position as thats where the movement starts
        */
       this -> stp_pin = stp_pin ;
       this -> dir_pin = dir_pin ;
+      this -> en_pin  = en_pin ;
 
       pinMode(this->stp_pin, OUTPUT) ;
       pinMode(this->dir_pin, OUTPUT) ;
+      pinMode(this->en_pin, OUTPUT) ;
 
       digitalWrite(this->stp_pin, 0) ;
       digitalWrite(this->dir_pin, 0) ;
+      digitalWrite(this->en_pin, 1) ;
 
       this -> calc_parameters() ;
 
@@ -411,6 +416,8 @@ class Stepper
         /*
          * If functions of the Friendly Finger are enabled OR functions were shut off and Finger is moving to center position
          */
+        digitalWrite(this->en_pin, 0) ;
+         
         if (DO_FUNCTIONS && do_final_move)
         {
           /*
@@ -478,8 +485,9 @@ class Stepper
              * Disables movement to center position and sets current direction to initial value
              */
             this -> do_final_move = false ;
-            this -> set_dir(0) ;
           }
+          this -> set_dir(0) ;
+          digitalWrite(this->en_pin, 1) ;
         }
       }
     }
@@ -531,7 +539,8 @@ class Stepper
 
     uint8_t   stp_pin ;
     uint8_t   dir_pin ;
-
+    uint8_t   en_pin ;
+    
     uint32_t  current_steps = 0 ;
     bool      current_dir   = 0 ;
 
@@ -1188,7 +1197,7 @@ class Lightshow
 
 
 
-Stepper           finger        ( STEPPER_STP , STEPPER_DIR ) ;
+Stepper           finger        ( STEPPER_STP , STEPPER_DIR , STEPPER_EN ) ;
 
 RgbLed            rgb_led_l     ( RGB_L_RED , RGB_L_GRN , RGB_L_BLU ) ;
 RgbLed            rgb_led_r     ( RGB_R_RED , RGB_R_GRN , RGB_R_BLU ) ;
@@ -1197,11 +1206,11 @@ Lightshow         lightshow     ( &rgb_led_l , &rgb_led_r ) ;
 
 
 #ifdef WEBSERVER
-WebServerManager  input_control ( &server ) ;
+  WebServerManager  input_control ( &server ) ;
 #endif
 
 #ifdef UDP_SERVER
-UdpServerManager  input_control ( &server ) ;
+  UdpServerManager  input_control ( &server ) ;
 #endif
 
 
