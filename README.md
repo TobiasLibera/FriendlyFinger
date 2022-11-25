@@ -9,7 +9,8 @@ The FriendlyFinger is a machine which rotates a 3D model of a middle finger from
 It's based on an ESP32 Development Board and is designed for remote control via WebServer or UDP.\
 You need a 3D printer for building this project as well as you need to be willing to put some effort into it.
 For example you will need to solder a little curcuit.<br></br>
-I had a lot of fun developing and building the Friendly Finger. I do hope you gain something from building it, too.<br></br>
+I had a lot of fun developing and building the Friendly Finger.\
+I do hope you gain something from building it, too.<br></br>
 
 
 
@@ -84,7 +85,7 @@ Feel free to use whatever floats your boat to realize this connections.
 
 There is a need to drill two holes into the breadboard to fit the LM2596 to it.
 The ```FF_Washer_Distance``` part is for spacing between the breadboard and the LM2596.
-The ```FF_Washer_ScrewIn``` part works as a nut for the M3x8 socket-head screws. It should be also possible to use standard M3 nuts for this.
+The ```FF_Washer_ScrewIn``` part works as a nut for the M3x8 socket-head screws. It should be also possible to use standard M3 nuts (ISO 4032 | ISO 4033) for this.
 
 
 ### Connection with Base ###
