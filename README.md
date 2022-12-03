@@ -9,7 +9,8 @@ The FriendlyFinger is a machine which rotates a 3D model of a middle finger from
 It's based on an ESP32 Development Board and is designed for remote control via WebServer or UDP.\
 You need a 3D printer for building this project as well as you need to be willing to put some effort into it.
 For example you will need to solder a little curcuit.<br></br>
-For me, I can say, that I had a lot of fun developing and building the FriendlyFinger.<br></br>
+I had a lot of fun developing and building the Friendly Finger.\
+I do hope you gain something from building it, too.<br></br>
 
 
 
@@ -45,7 +46,7 @@ The fits in the ```FF_Template_Fits``` part are:
       <li>My Value:   5mm</li>
     </ol>
   </li>    
-  <li>Countersunk hole for M3 screw of standard ISO4762</li>
+  <li>Countersunk hole for M3 screw (standard: ISO 4762)</li>
 </ol>
 
 Feel free to modify the corresponding STEP files to make this fits work properly.
@@ -84,7 +85,7 @@ Feel free to use whatever floats your boat to realize this connections.
 
 There is a need to drill two holes into the breadboard to fit the LM2596 to it.
 The ```FF_Washer_Distance``` part is for spacing between the breadboard and the LM2596.
-The ```FF_Washer_ScrewIn``` part works as a nut for the M3x8 socket-head screws. It should be also possible to use standard M3 nuts for this.
+The ```FF_Washer_ScrewIn``` part works as a nut for the M3x8 socket-head screws. It should be also possible to use standard M3 nuts (ISO 4032 | ISO 4033) for this.
 
 
 ### Connection with Base ###
@@ -120,7 +121,7 @@ You can install this library by using the Library Manager of the Arduino IDE.
 ### Adjustments to the Code ###
 
 There is a pretty big ```#define``` section on top of the code, where you can do some settings.
-Necessary is the IP address you want for the ESP32 as well as the gateway of your local network.
+Necessary is the IP address you want to use for the ESP32 as well as the password to your local network.
 
 You can also define, if you want to control the FriendlyFinger by a webserver hosted on the ESP32. Or if you want the ESP32 as a UDP receiver for controlling. That's the setting I use, cause I control the Friendly Finger with a website in my local network which is hosted on a Raspberry Pi.
 
@@ -157,7 +158,7 @@ I can absolutely recommend this website for 3D Models for standard parts, especi
 ### ESP32 Webserver ###
 
 As I didn't had much experience with webservers hosted on an ESP32, I used a tutorial as a base for my version of the code.
-The tutorial I used is [ESP32 Webserver Tutorial](https://lastminuteengineers.com/creating-esp32-web-server-arduino-ide/).<br></br>
+The tutorial I used was the [ESP32 Webserver Tutorial](https://lastminuteengineers.com/creating-esp32-web-server-arduino-ide/).<br></br>
 
 
 
