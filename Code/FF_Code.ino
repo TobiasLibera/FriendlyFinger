@@ -6,9 +6,9 @@
  * https://github.com/TobiasLibera/FriendlyFinger
  * 
  * All data of this project is licensed under the
- * Creative Commons Zero v1.0 Universal
+ * GNU General Public License 3
  * 
- * 2022-11-25
+ * 2022-12-03
  */
  
 #include <WiFi.h>
