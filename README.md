@@ -12,6 +12,9 @@ For example you will need to solder a little curcuit.<br></br>
 I had a lot of fun developing and building the Friendly Finger.\
 I do hope you gain something from building it, too.<br></br>
 
+A Video can be found here:\
+[Youtube Video](https://youtu.be/8vTFOdNh7Bw)<br></br>
+
 
 
 ## Printing ##
