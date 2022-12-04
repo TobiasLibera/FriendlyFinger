@@ -14,7 +14,8 @@ I do hope you gain something from building it, too.<br></br>
 
 A Video can be found here:\
 [Youtube Video](https://youtu.be/8vTFOdNh7Bw)<br></br>
-
+Thingiverse:\
+[Printing Data](https://www.thingiverse.com/thing:5678932)<br></br>
 
 
 ## Printing ##
