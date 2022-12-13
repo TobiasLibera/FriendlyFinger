@@ -85,6 +85,20 @@ There is a wiring diagram in the "Documentation" directory, where the basics of 
 Feel free to use whatever floats your boat to realize this connections.
 
 
+### Nema 17 Stepper Motor ###
+
+The Nema 17 I used to design this device for, has a body length of ***38mm***. As there are a lot of alternative dimensions for Nema 17 stepper motors, you can definitly use smaller ones for your device. It's not much force needed to rotate the middle finger model. I can't recommend to use bigger ones, as I didn't test it... if you get a bigger one working, let me know.
+
+
+### Stepper Motor Driver ###
+
+The ***DRV8825*** is the driver I designed the code and the curcuit for. You can, of course, choose the driver you want to, but maybe need to adjust the code and the curcuit.\
+***BUT:***
+As far as I had the Friendly Finger run in my living room, I realised that dissipated heat is sure an issue of my design. To solve the problem I adjusted the current to ***75% - 80%*** of the nominal value of the stepper motor.\
+Look for some help on the World Wide Web how to adjust the current with the stepper driver you use.\
+In case of the ***DRV8825*** you need to regulate the value of voltage of the trimmer on the driver board to half of the value of current you want to have flow threw your motor. (And be careful with the trimmer, though)
+
+
 ### Fit with LM2596 DC-DC Step Down Module ###
 
 There is a need to drill two holes into the breadboard to fit the LM2596 to it.
