@@ -56,7 +56,7 @@ IPAddress DNS               (192, 168, 1,   1) ;
  * Controls Definitions
  */
                                               /* ATTENTION: Only have one of the Control Definitions uncommented! */
-#define WEBSERVER                             /* If defined: The ESP32 will host a webserver for turning the Friendly Finger on and off *//(/
+#define WEBSERVER                             /* If defined: The ESP32 will host a webserver for turning the Friendly Finger on and off *//
 //#define UDP_SERVER                          /* If defined: Enables the receiving of UDP messages for turning the Friendly Finger on and off */
 
 #define _SERVER_PORT                    80    /* Port where Webserver will be hosted OR UDP-server is listening */
